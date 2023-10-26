@@ -6,7 +6,7 @@ function citycountry(cityReq, countryReq) {
     country = countryReq
     const method = 2; // Prayer calculation method in North America choose 2 for ISNA 
 
-    const url = `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=${method}`;
+    const url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=${method}`;
 
     fetch(url)
         .then(response => response.json())
